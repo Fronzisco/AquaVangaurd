@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harbor - Our Hero - Oceanic Theme</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header with Hero Image -->
+    <header>
+        <div class="hero" style="background-image: url('images/hero.jpg');">
+            <div class="logo-overlay">
+                <img src="images/logo.png" alt="Oceanic Logo" class="logo">
+                <h1>Harbor - Our Hero</h1>
+                <p>Why Harbor from Valorant is our hero and inspiration.</p>
+            </div>
+        </div>
+        
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="team.html">Our Team</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="careers.html">Careers</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="harbor-hero.html">Harbor - Our Hero</a></li>
+        </ul>
+        <form onsubmit="handleSearch(event)">
+            <input type="search" id="search" placeholder="Search the site...">
+            <button type="submit">Search</button>
+        </form>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <article>
+            <h2>Why Harbor is Our Hero</h2>
+            <p>In Valorant, Harbor is a powerful and resourceful agent who controls water, creating barriers and providing support for his team. We see Harbor as our hero because of his ability to protect and guide others, much like how we aim to protect and guide our projects, team, and community. Harbor's resilience and strategic thinking inspire us to push forward through challenges and to create lasting impacts in everything we do.</p>
+            
+            <h3>What Makes Harbor Our Hero?</h3>
+            <ul>
+                <li><strong>Protective Abilities:</strong> Just like Harbor's ability to shield his teammates with water, we value the importance of teamwork and protection in our projects.</li>
+                <li><strong>Strategic Mind:</strong> Harbor uses water to control the flow of battle, reminding us that strategic thinking is key to overcoming obstacles.</li>
+                <li><strong>Supportive Leadership:</strong> Harbor leads by example, just as we lead our team by providing the necessary tools and encouragement to succeed.</li>
+            </ul>
+            
+            <img src="images/hero.jpg" alt="Harbor from Valorant" class="hero-image">
+        </article>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Oceanic Theme. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/search.js"></script>
+    <script>
+        function handleSearch(event) {
+            event.preventDefault();
+            const query = document.getElementById('search').value.toLowerCase();
+            if (query.includes('ocean')) {
+                alert('Enjoy our ocean-themed content!');
+            } else {
+                alert(`No results found for "${query}".`);
+            }
+        }
+    </script>
+</body>
+</html>

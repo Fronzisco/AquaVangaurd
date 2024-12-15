@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Careers - Oceanic Theme</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+         <div class="hero">
+            <div class="logo-overlay">
+                <img src="images/logo.png" alt="Oceanic Logo" class="logo">
+            </div>
+        </div>
+        <script src="js/search.js"></script>
+        <h1>Join Our Team</h1>
+        <p>Make a difference for the oceans while advancing your career.</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="team.html">Our Team</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="careers.html">Careers</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="harbor-hero.html">Harbor - Our Hero</a></li>
+        </ul>
+    </nav>
+    <main>
+        <article>
+            <h2>Open Positions</h2>
+            <p>Explore our available job opportunities and join our mission.</p>
+            <img src="careers.jpg" alt="Team working on the beach">
+        </article>
+    </main>
+    <footer>
+        <p>&copy; 2024 Oceanic Theme. All rights reserved.</p>
+    </footer>
+<script src="js/search.js"></script>
+    <script>
+        function handleSearch(event) {
+            event.preventDefault();
+            const query = document.getElementById('search').value.toLowerCase();
+            if (query.includes('ocean')) {
+                alert('Enjoy our ocean-themed content!');
+            } else {
+                alert(`No results found for "${query}".`);
+            }
+        }
+    </script>
+</body>
+</html>

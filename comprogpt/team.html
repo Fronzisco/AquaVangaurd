@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Team - Oceanic Theme</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="hero">
+            <div class="logo-overlay">
+                <img src="images/logo.png" alt="Oceanic Logo" class="logo">
+            </div>
+        </div>
+        <script src="js/search.js"></script>
+        <h1>Our Team</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="team.html">Our Team</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="careers.html">Careers</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="harbor-hero.html">Harbor - Our Hero</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Meet Our Team</h2>
+            <div class="team-member">
+                <img src="images/francis.jpg" alt="Francis Jeremy M. Serna">
+                <h3>Francis Jeremy M. Serna</h3>
+                <p>Francis is the head of our team and a visionary leader with a passion for innovative solutions. With a background in project management and a deep love for the ocean, Francis ensures that every project we undertake aligns with our mission to create a positive impact. His leadership inspires the team to strive for excellence.</p>
+            </div>
+
+            <div class="team-member">
+                <img src="images/edlouise.jpg" alt="Edlouise Agustin M. Alvar">
+                <h3>Edlouise Agustin M. Alvar</h3>
+                <p>As the Project Manager, Edlouise oversees the planning and execution of all our initiatives. Her organizational skills and attention to detail ensure that every aspect of our projects runs smoothly. Edlouise is also an advocate for sustainable practices and integrates these principles into our workflows.</p>
+            </div>
+
+            <div class="team-member">
+                <img src="images/julhiane.jpg" alt="Julhiane B. Abarca">
+                <h3>Julhiane B. Abarca</h3>
+                <p>Julhiane is our Creative Designer, bringing ideas to life through stunning visuals and innovative designs. Her artistic talents and ability to capture the essence of the ocean in her work make her an invaluable part of the team. Julhiane's designs are at the heart of our branding and marketing efforts.</p>
+            </div>
+
+            <div class="team-member">
+                <img src="images/allen.jpg" alt="Allen Nagales">
+                <h3>Allen Nagales</h3>
+                <p>Allen is the Lead Developer, responsible for turning concepts into reality through cutting-edge technology. With a strong foundation in software development and a keen interest in user experience, Allen creates solutions that are both functional and engaging. His dedication to innovation drives our technical success.</p>
+            </div>
+
+            <div class="team-member">
+                <img src="images/erji.jpg" alt="Erji Quiño">
+                <h3>Erji Quiño</h3>
+                <p>Erji is our Marketing Specialist, the voice behind our campaigns and outreach programs. Her strategic approach to marketing helps us connect with our audience and spread awareness about our mission. Erji's enthusiasm and creativity make her a dynamic force in promoting our projects.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Oceanic Theme. All rights reserved.</p>
+    </footer>
+<script src="js/search.js"></script>
+    <script>
+        function handleSearch(event) {
+            event.preventDefault();
+            const query = document.getElementById('search').value.toLowerCase();
+            if (query.includes('ocean')) {
+                alert('Enjoy our ocean-themed content!');
+            } else {
+                alert(`No results found for "${query}".`);
+            }
+        }
+    </script>
+</body>
+
+</html>

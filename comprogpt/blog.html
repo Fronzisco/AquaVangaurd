@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Oceanic Theme</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="hero">
+            <div class="logo-overlay">
+                <img src="images/logo.png" alt="Oceanic Logo" class="logo">
+            </div>
+        </div>
+        <script src="js/search.js"></script>
+        <h1>Oceanic Insights</h1>
+        <p>Dive into stories, tips, and news about the ocean.</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="team.html">Our Team</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="careers.html">Careers</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="harbor-hero.html">Harbor - Our Hero</a></li>
+        </ul>
+    </nav>
+    <main>
+        <article>
+            <h2>Recent Posts</h2>
+            <ul>
+                <li><a href="#">5 Tips for Sustainable Beach Trips</a></li>
+                <li><a href="#">How Coral Reefs Support Marine Life</a></li>
+                <li><a href="#">The Importance of Beach Cleanups</a></li>
+            </ul>
+        </article>
+    </main>
+    <footer>
+        <p>&copy; 2024 Oceanic Theme. All rights reserved.</p>
+    </footer>
+<script src="js/search.js"></script>
+    <script>
+        function handleSearch(event) {
+            event.preventDefault();
+            const query = document.getElementById('search').value.toLowerCase();
+            if (query.includes('ocean')) {
+                alert('Enjoy our ocean-themed content!');
+            } else {
+                alert(`No results found for "${query}".`);
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,167 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e0f7fa; /* Light cyan for ocean feel */
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #0077be; /* Ocean blue */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+/* Navigation */
+nav {
+    background-color: #005073; /* Deep ocean blue */
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+nav ul li a:hover {
+    color: #00c1d4; /* Aqua */
+}
+
+form {
+    margin-top: 10px;
+    text-align: center;
+}
+
+input[type="search"] {
+    padding: 5px;
+    font-size: 1em;
+}
+
+button {
+    padding: 5px 10px;
+    font-size: 1em;
+    background-color: #0077be;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #005073;
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #0077be;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Hero section with background image and logo overlay */
+.hero {
+    background-image: url('../images/background.jpg'); /* Background image */
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.hero .logo-overlay {
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay for better contrast */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.hero .logo {
+    max-width: 150px; /* Adjust the logo size */
+    margin-bottom: 20px;
+}
+
+h1, p {
+    margin: 0;
+}
+
+/* Welcome image styling */
+.welcome-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+/* FAQ Section */
+.faq-section {
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.faq-item {
+    margin-bottom: 20px;
+}
+
+.faq-item h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.faq-item p {
+    font-size: 1em;
+    line-height: 1.6;
+}
+
+.faq-item a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+.faq-item a:hover {
+    text-decoration: underline;
+}
+

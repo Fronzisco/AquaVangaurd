@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Oceanic Theme</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="hero">
+            <div class="logo-overlay">
+                <img src="images/logo.png" alt="Oceanic Logo" class="logo">
+                <h1>Welcome to Our Oceanic World</h1>
+                <p>Discover the beauty of the ocean and the beach.</p>
+            </div>
+        </div>
+        <script src="js/search.js"></script>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="team.html">Our Team</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="careers.html">Careers</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="harbor-hero.html">Harbor - Our Hero</a></li>
+        </ul>
+        <form onsubmit="handleSearch(event)">
+            <input type="search" id="search" placeholder="Search the site...">
+            <button type="submit">Search</button>
+        </form>
+    </nav>
+    <main>
+        <article>
+            <h2>Explore the Ocean</h2>
+            <p>Experience the wonders of the sea, the waves, and the sandy shores.</p>
+            <img src="images/welcome.jpg" alt="Welcome to the Oceanic World" class="welcome-img">
+        </article>
+    </main>
+    <footer>
+        <p>&copy; 2024 Oceanic Theme. All rights reserved.</p>
+    </footer>
+    <script src="js/search.js"></script>
+    <script>
+        function handleSearch(event) {
+            event.preventDefault();
+            const query = document.getElementById('search').value.toLowerCase();
+            if (query.includes('ocean')) {
+                alert('Enjoy our ocean-themed content!');
+            } else {
+                alert(`No results found for "${query}".`);
+            }
+        }
+    </script>
+</body>
+</html>
